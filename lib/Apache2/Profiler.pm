@@ -9,7 +9,7 @@ use Apache2::RequestUtil;
 use APR::Pool;
 use Time::HiRes qw(gettimeofday);
 
-our $VERSION = 0.01;
+our $VERSION = '0.10';
 
 sub handler {
     my $r = shift;
