@@ -3,6 +3,9 @@ Revision history for Perl extension Apache::Profiler
 Current
   *** NEW MAINTAINER: Michael Schout <mschout@cpan.org>
     - fixed test case: find log dir using Apache::Test
+    - update Makefile.PL for mod_perl2 support, and check min Apache::Test
+      version.
+    - various Makefile.PL updates.
 
 0.01  Tue Oct  7 20:17:55 2003
     - original version
