@@ -2,6 +2,7 @@ Revision history for Perl extension Apache::Profiler
 
 Current
   *** NEW MAINTAINER: Michael Schout <mschout@cpan.org>
+    - fixed test case: find log dir using Apache::Test
 
 0.01  Tue Oct  7 20:17:55 2003
     - original version
