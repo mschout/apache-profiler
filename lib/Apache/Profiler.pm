@@ -47,6 +47,10 @@ time taken to process one request. Profiled data is reported to the
 Apache Log file. It'd be useful to profile some heavy application
 taking a long time to proceed.
 
+Apache::Profiler is for C<mod_perl> version 1.x.  If you have C<mod_perl>
+version 2.0 or later, you need Apache2::Profiler, which  is included in this
+distribution, instead.
+
 It uses L<Time::HiRes> to take milliseconds, and outputs profiled data
 as Apache log C<notice> level like:
 
@@ -82,15 +86,48 @@ profiles CPU time rather than C<gettimeofday>
 
 patches are always welcome!
 
+=head1 SOURCE
+
+You can contribute or fork this project via github:
+
+http://github.com/mschout/apache-profiler
+
+ git clone git://github.com/mschout/apache-profiler.git
+
+=head1 BUGS
+
+Please report any bugs or feature requests to
+bug-apache-profiler@rt.cpan.org, or through the web
+interface at http://rt.cpan.org/
+
 =head1 AUTHOR
 
-Tatsuhiko Miyagawa E<lt>miyagawa@bulknews.netE<gt>
+Michael Schout E<lt>mschout@cpan.orgE<gt>
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+Initial implementation by Tatsuhiko Miyagawa E<lt>miyagawa@bulknews.netE<gt>.
+
+=head1 COPYRIGHT & LICENSE
+
+Copyright 2009 Michael Schout.
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of either:
+
+=over 4
+
+=item *
+
+the GNU General Public License as published by the Free Software Foundation;
+either version 1, or (at your option) any later version, or
+
+=item *
+
+the Artistic License version 2.0.
+
+=back
 
 =head1 SEE ALSO
 
-L<Apache::Log>, L<Time::HiRes>
+L<Apache2::Profiler>, L<Time::HiRes>
 
 =cut

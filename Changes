@@ -9,6 +9,7 @@ Current
     - various Makefile.PL updates.
     - sign dist, add signature test
     - reorganize test files
+    - update POD documentation
 
 0.01  Tue Oct  7 20:17:55 2003
     - original version
