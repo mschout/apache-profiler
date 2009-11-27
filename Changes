@@ -1,4 +1,7 @@
 Revision history for Perl extension Apache::Profiler
 
+Current
+  *** NEW MAINTAINER: Michael Schout <mschout@cpan.org>
+
 0.01  Tue Oct  7 20:17:55 2003
-	- original version
+    - original version
