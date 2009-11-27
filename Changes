@@ -5,6 +5,7 @@ Current
     - fixed test case: find log dir using Apache::Test
     - update Makefile.PL for mod_perl2 support, and check min Apache::Test
       version.
+    - add Apache2::Profiler for mod_perl2
     - various Makefile.PL updates.
     - sign dist, add signature test
     - reorganize test files
