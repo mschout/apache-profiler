@@ -6,6 +6,7 @@ Current
     - update Makefile.PL for mod_perl2 support, and check min Apache::Test
       version.
     - various Makefile.PL updates.
+    - sign dist, add signature test
 
 0.01  Tue Oct  7 20:17:55 2003
     - original version
