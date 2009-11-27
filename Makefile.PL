@@ -32,6 +32,7 @@ my %conf = (
     ABSTRACT_FROM => 'lib/Apache/Profiler.pm',
     PREREQ_PM     => {
         'Test::More'   => 0.32,
+        'Time::HiRes'  => 0,
         'Apache::Test' => MIN_APACHE_TEST_VERSION
     },
     clean           => { FILES => join ' ', @CleanFiles },
