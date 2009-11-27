@@ -1,11 +1,11 @@
 package Apache::Profiler;
 
 use strict;
-use vars qw($VERSION);
-$VERSION = 0.01;
 
 use Apache::Log;
 use Time::HiRes qw(gettimeofday);
+
+our $VERSION = 0.01;
 
 sub handler {
     my $r = shift;
@@ -14,16 +14,16 @@ sub handler {
 }
 
 sub compute {
-    my $r = shift;
-    my $now = gettimeofday();
+    my $r    = shift;
+    my $now  = gettimeofday();
     my $diff = $now - $r->pnotes('ap_start_time');
 
     my $threshold = $r->dir_config('ProfileLongerThan') || 0;
     if ($diff >= $threshold) {
-	my $uri = $r->uri;
-	my $query = $r->query_string;
-	if ($query) { $uri .= "?$query" }
-	$r->log->notice("uri: $uri takes $diff seconds");
+        my $uri   = $r->uri;
+        my $query = $r->query_string;
+        if ($query) { $uri .= "?$query" }
+        $r->log->notice("uri: $uri takes $diff seconds");
     }
 }
 
